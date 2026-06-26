@@ -1,0 +1,414 @@
+# Rainfall Prediction Project — Run Steps on Mac
+
+## 1. Project folder path
+
+My project folder is:
+
+```bash
+/Users/alismac/Documents/Monsoon Hackthon Project/final with py
+```
+
+To open this folder in Terminal:
+
+```bash
+cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+```
+
+Because the folder name has spaces, always use double quotes around the path.
+
+---
+
+## 2. Files required in the folder
+
+The folder should contain:
+
+```text
+final with py/
+│
+├── imd_final.ipynb
+├── imd_final.py
+├── Indian Rainfall Dataset District-wise Daily Measurements.csv
+├── train_model.py
+├── app.py
+├── venv/
+│
+└── artifacts/
+    ├── rainfall_model.joblib
+    ├── model_results.csv
+    └── metadata.json
+```
+
+Important files:
+
+| File              | Purpose                              |
+| ----------------- | ------------------------------------ |
+| `imd_final.ipynb` | Original Jupyter Notebook            |
+| `imd_final.py`    | Converted Python file from notebook  |
+| `train_model.py`  | Trains model and creates saved files |
+| `app.py`          | Runs the Streamlit web app           |
+| CSV file          | Dataset                              |
+| `artifacts/`      | Contains trained model and metadata  |
+
+---
+
+## 3. Open Terminal
+
+Press:
+
+```text
+Command + Space
+```
+
+Search:
+
+```text
+Terminal
+```
+
+Open Terminal.
+
+---
+
+## 4. Go to project folder
+
+```bash
+cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+```
+
+Check files:
+
+```bash
+ls
+```
+
+You should see:
+
+```text
+imd_final.ipynb
+imd_final.py
+train_model.py
+app.py
+Indian Rainfall Dataset District-wise Daily Measurements.csv
+venv
+artifacts
+```
+
+---
+
+## 5. Activate virtual environment
+
+```bash
+source venv/bin/activate
+```
+
+After this, Terminal should show:
+
+```text
+(venv)
+```
+
+If it shows `(venv)`, environment is activated.
+
+---
+
+## 6. Install required libraries
+
+Run this only once, or when setting up on a new laptop:
+
+```bash
+pip install pandas numpy scikit-learn joblib streamlit matplotlib seaborn plotly
+```
+
+Optional, for faster Streamlit performance:
+
+```bash
+xcode-select --install
+pip install watchdog
+```
+
+---
+
+## 7. Train the model
+
+Run:
+
+```bash
+python3 train_model.py
+```
+
+This will:
+
+1. Load the rainfall dataset.
+2. Clean and prepare data.
+3. Train machine learning models.
+4. Select the best model.
+5. Save files inside `artifacts/`.
+
+After successful run, you should see something like:
+
+```text
+Training completed successfully.
+
+Saved files:
+- artifacts/rainfall_model.joblib
+- artifacts/model_results.csv
+- artifacts/metadata.json
+```
+
+---
+
+## 8. Check artifacts folder
+
+Run:
+
+```bash
+ls artifacts
+```
+
+Expected output:
+
+```text
+metadata.json
+model_results.csv
+rainfall_model.joblib
+```
+
+These files are required for Streamlit.
+
+---
+
+## 9. Run Streamlit app
+
+After training is completed, run:
+
+```bash
+streamlit run app.py
+```
+
+You should see:
+
+```text
+You can now view your Streamlit app in your browser.
+
+Local URL: http://localhost:8501
+```
+
+Open this in browser:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# Daily Run Steps
+
+Use these steps when you already created everything and just want to run the project again.
+
+```bash
+cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+source venv/bin/activate
+streamlit run app.py
+```
+
+Open browser:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# Full Run Steps from Start
+
+Use these steps when running from scratch:
+
+```bash
+cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+source venv/bin/activate
+python3 train_model.py
+streamlit run app.py
+```
+
+---
+
+# When to run `train_model.py`
+
+Run this only when:
+
+1. You changed the dataset.
+2. You changed model training code.
+3. You deleted the `artifacts/` folder.
+4. You want to retrain the model.
+
+Command:
+
+```bash
+python3 train_model.py
+```
+
+---
+
+# When to run `app.py`
+
+Run this when you want to open the web app:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# Important Difference
+
+| Command                  | What it does                     |
+| ------------------------ | -------------------------------- |
+| `python3 train_model.py` | Trains the model and saves files |
+| `streamlit run app.py`   | Opens the web app in browser     |
+
+`train_model.py` will **not** open the browser.
+
+Only this opens Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# If browser shows blank page
+
+First stop Streamlit:
+
+```text
+Control + C
+```
+
+Then run:
+
+```bash
+cat app.py
+```
+
+Check if `app.py` has code.
+
+Test with this small code inside `app.py`:
+
+```python
+import streamlit as st
+
+st.title("Rainfall Prediction App")
+st.write("Streamlit app is running successfully.")
+```
+
+Then run again:
+
+```bash
+streamlit run app.py
+```
+
+If this works, then Streamlit is fine and the issue is in the full `app.py` code.
+
+---
+
+# If `artifacts` files are missing
+
+Run:
+
+```bash
+python3 train_model.py
+```
+
+Then check:
+
+```bash
+ls artifacts
+```
+
+Expected:
+
+```text
+metadata.json
+model_results.csv
+rainfall_model.joblib
+```
+
+---
+
+# If `streamlit` command not found
+
+Run:
+
+```bash
+pip install streamlit
+```
+
+Then try again:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# If `python` does not work on Mac
+
+Use:
+
+```bash
+python3
+```
+
+Example:
+
+```bash
+python3 train_model.py
+```
+
+---
+
+# If CSV file is not found
+
+Check exact CSV filename:
+
+```bash
+ls *.csv
+```
+
+Then open `train_model.py` and make sure this line matches the exact CSV name:
+
+```python
+DATA_PATH = Path("Indian Rainfall Dataset District-wise Daily Measurements.csv")
+```
+
+The filename must match exactly.
+
+---
+
+# Final Project Run Command
+
+Most commonly, use this:
+
+```bash
+cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+source venv/bin/activate
+streamlit run app.py
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+
+
+
+
+Step 1: cd "/Users/alismac/Documents/Monsoon Hackthon Project/final with py"
+
+Step 2: source venv/bin/activate
+
+Step 3: streamlit run app.py
+
+Step 4: Control + C

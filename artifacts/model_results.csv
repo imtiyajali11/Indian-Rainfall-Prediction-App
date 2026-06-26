@@ -1,0 +1,5 @@
+Model,MAE,RMSE,R2_Score
+Random Forest,43.126,129.5839,0.6486
+Decision Tree,61.572,146.3145,0.5519
+Gradient Boosting,67.5696,169.9092,0.3958
+Linear Regression,120.2199,214.3848,0.0381
