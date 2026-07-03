@@ -45,9 +45,12 @@ The final model is deployed using Streamlit for interactive predictions.
 │   ├── metadata.json
 │   └── model_results.csv
 └── README.md
-![](<Screenshot 2026-06-26 at 4.09.33 PM.png>)
-![alt text](<Screenshot 2026-06-26 at 4.09.55 PM.png>)
-![alt text](<Screenshot 2026-06-26 at 4.10.14 PM.png>)
-![alt text](<Screenshot 2026-06-26 at 4.10.49 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.11.10 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.11.30 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.03 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.19 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.42 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.39.15 PM.png>)
-
 ```text
+
+<img width="1182" height="664" alt="75707271-B97E-4EB7-A306-FD5B23904B3A_1_105_c" src="https://github.com/user-attachments/assets/9a4dbc7f-9664-4270-aba0-a3439ea08488" />
+<img width="5712" height="3213" alt="93E1ED45-77FB-4C8C-8C62-C87D4E4FC305_1_201_a" src="https://github.com/user-attachments/assets/c6078256-40f3-49f4-ba36-780b9653d025" />
+<img width="2364" height="1330" alt="3BB29989-703C-40EC-BD22-BEE400A8B130_1_102_a" src="https://github.com/user-attachments/assets/e3d3a801-78a6-4b8f-8e8b-6f00f714006c" />
+<img width="5712" height="3213" alt="008CADF7-2A22-447C-A309-CBA1B183EE70_1_201_a" src="https://github.com/user-attachments/assets/27592489-491e-4342-aa05-7e6daabdbebb" />
+
+<img width="1058" height="744" alt="508D3D03-164F-44BA-8753-B08F35376E02_1_105_c" src="https://github.com/user-attachments/assets/ca61129b-8ddf-478b-a196-771aa50b38de" />
+
