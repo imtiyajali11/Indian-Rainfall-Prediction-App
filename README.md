@@ -1,4 +1,6 @@
 # Indian Rainfall Prediction App
+<img width="5712" height="3213" alt="93E1ED45-77FB-4C8C-8C62-C87D4E4FC305_1_201_a" src="https://github.com/user-attachments/assets/365ec15a-6ead-43f7-b8e6-f8d14e12a7c0" />
+<img width="1182" height="664" alt="75707271-B97E-4EB7-A306-FD5B23904B3A_1_105_c" src="https://github.com/user-attachments/assets/a8334cb4-0466-4101-85f1-88780996ad2d" />
 
 This project predicts estimated total monthly rainfall for Indian districts using historical district-wise rainfall data and machine learning.
 
@@ -46,12 +48,11 @@ The final model is deployed using Streamlit for interactive predictions.
 │   └── model_results.csv
 └── README.md
 
+<img width="4896" height="2754" alt="F61090D0-AB76-4C95-BBDE-8EF0AE687EFC_1_201_a" src="https://github.com/user-attachments/assets/bbad6267-70bb-4589-bc16-b3e078ca09db" />
+<img width="2364" height="1330" alt="0218A26E-5E88-459C-BE36-6F7E994E92F5_1_102_a" src="https://github.com/user-attachments/assets/6c0fe808-0ab1-4b08-9a2a-aad09ab4e197" />
+<img width="1058" height="744" alt="508D3D03-164F-44BA-8753-B08F35376E02_1_105_c" src="https://github.com/user-attachments/assets/6985d945-945e-4d6c-b369-eaebf04c697f" />
 
-<img width="1182" height="664" alt="75707271-B97E-4EB7-A306-FD5B23904B3A_1_105_c" src="https://github.com/user-attachments/assets/9a4dbc7f-9664-4270-aba0-a3439ea08488" />
-<img width="5712" height="3213" alt="93E1ED45-77FB-4C8C-8C62-C87D4E4FC305_1_201_a" src="https://github.com/user-attachments/assets/c6078256-40f3-49f4-ba36-780b9653d025" />
-<img width="2364" height="1330" alt="3BB29989-703C-40EC-BD22-BEE400A8B130_1_102_a" src="https://github.com/user-attachments/assets/e3d3a801-78a6-4b8f-8e8b-6f00f714006c" />
-<img width="5712" height="3213" alt="008CADF7-2A22-447C-A309-CBA1B183EE70_1_201_a" src="https://github.com/user-attachments/assets/27592489-491e-4342-aa05-7e6daabdbebb" />
 
-<img width="1058" height="744" alt="508D3D03-164F-44BA-8753-B08F35376E02_1_105_c" src="https://github.com/user-attachments/assets/ca61129b-8ddf-478b-a196-771aa50b38de" />
+
 
 ```text
