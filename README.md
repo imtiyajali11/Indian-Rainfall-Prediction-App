@@ -34,7 +34,6 @@ The final model is deployed using Streamlit for interactive predictions.
 ## Project Structure
 ![
 ](<Screenshot 2026-06-26 at 2.37.41 PM.png>)
-```text
 .
 ├── app.py
 ├── train_model.py
@@ -50,3 +49,5 @@ The final model is deployed using Streamlit for interactive predictions.
 ![alt text](<Screenshot 2026-06-26 at 4.09.55 PM.png>)
 ![alt text](<Screenshot 2026-06-26 at 4.10.14 PM.png>)
 ![alt text](<Screenshot 2026-06-26 at 4.10.49 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.11.10 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.11.30 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.03 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.19 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.12.42 PM.png>) ![alt text](<Screenshot 2026-06-26 at 4.39.15 PM.png>)
+
+```text
